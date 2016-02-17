@@ -1,0 +1,32 @@
+[user]
+    name = Indrashish
+    email = mail@indrashishghosh.com
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset | %Cgreen(%cd)%Creset %C(blue)%an%Creset | %s %C(yellow)%d%Creset' --abbrev-commit --date=short
+    lga = log --graph --pretty=format:'%Cred%h%Creset | %Cgreen(%cd)%Creset %C(blue)%an%Creset | %s %C(yellow)%d%Creset' --all --abbrev-commit --date=short
+    g = grep --break --heading --line-number
+    co = checkout
+    s = status
+    ss = status --short
+    b = branch
+    stats = shortlog -sn
+    cnf = !git ls-files -u | cut -f 2 | sort -u
+[color]
+    ui = true
+[mergetool]
+    keepBackup = true
+[credential]
+    helper = osxkeychain
+[push]
+    default = simple
+[grep]
+    lineNumber = true
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[core]
+	autocrlf = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
