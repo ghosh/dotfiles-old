@@ -23,7 +23,7 @@ filetype on
 
 set background=dark
 "let base16colorspace=256
-colorscheme Tomorrow-Night
+colorscheme OceanicNext
 
 set linespace=0
 set showcmd
@@ -98,7 +98,7 @@ execute pathogen#infect()
 
 " Airline Settings
 let g:airline_powerline_fonts=1
-let g:airline_theme='powerlineish'
+let g:airline_theme='oceanicnext'
 
 
 " ---------------------------------------------

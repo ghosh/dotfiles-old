@@ -1,9 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/Ghosh/Sites/Stylekit/site'
-let g:netrw_dirhist_2='/Users/Ghosh/Sites/Stylekit/mixins'
-let g:netrw_dirhist_3='/Users/Ghosh'
-let g:netrw_dirhist_4='/Users/Ghosh/Sites/Terminex/source'
-let g:netrw_dirhist_5='/Users/Ghosh/Sites/Mantra/source'
-let g:netrw_dirhist_6='/Users/Ghosh/Sites/Ghosh/source/templates'
-let g:netrw_dirhist_7='/Users/Ghosh/Sites/Bedrock/source'
+let g:netrw_dirhist_cnt =0

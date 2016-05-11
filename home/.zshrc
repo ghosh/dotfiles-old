@@ -13,7 +13,7 @@ ZSH_THEME="ambidexter"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git composer sublime laravel5 vagrant z npm bower brew zsh-navigation-tools)
+plugins=(git svn composer sublime laravel5 vagrant z npm bower brew zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -21,8 +21,12 @@ source $ZSH/oh-my-zsh.sh
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
-
+# Set default editior as vim
 export EDITOR='vim'
+
+# don't check for new mail
+MAILCHECK=0
+MAIL=0
 
 
 # ---------------------------------
@@ -67,6 +71,16 @@ alias sql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot"
 # Tmux -----------------------------------------
 alias tkill="tmux kill-session -t"
 
+# SVN ---------------------------------------------
+
+# add everything that needs to be added based on results of svn status
+alias svnadd="svn st | grep \? | awk '''{print \"svn add \"$2 }''' | bash" 
+
+# show svn status, sans the noise from externals
+alias svnst='svn st --ignore-externals'
+
+# Others -----------------------------------------
+
 # Runs a custom PHP server
 alias serve="php -S localhost:8888"
 
@@ -83,7 +97,7 @@ alias remove="rm -rf"
 export PATH=$PATH:/bin:/usr/bin:/usr/local/bin
 
 # Defining and adding MAMP php to path (Comment and uncomment to toggle)
-export MAMP_PHP=/Applications/MAMP/bin/php/php5.5.3/bin
+export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin
 export PATH="$MAMP_PHP:$PATH"
 
 #As mentioned by Brew Doctor
@@ -97,7 +111,7 @@ export PATH="$MAMP_PHP:$PATH"
 # ---------------------------------
 # Grunt Tab Completion
 # ---------------------------------
-eval "$(grunt --completion=zsh)"
+#eval "$(grunt --completion=zsh)"
 
 
 #export NVM_DIR="/Users/Ghosh/.nvm"
