@@ -14,3 +14,7 @@ Dotfiles managed by [Homesick](https://github.com/technicalpickles/homesick)
 - [ ] Move exports to separate file
 - [ ] Add global `.gitignore`
 - [ ] Add vim plugins
+
+```
+\m/
+```
