@@ -14,6 +14,7 @@ Dotfiles managed by [Homesick](https://github.com/technicalpickles/homesick)
 - [ ] Add `.osx` macOS defaults
 - [ ] Move exports to separate file
 - [ ] Add global `.gitignore`
+- [ ] Add `.atom` for syncing atom editor settings
 - [ ] Adopt [vim-plug](https://github.com/junegunn/vim-plug) for plugin mangement
 
 ```
