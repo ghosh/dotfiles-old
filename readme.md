@@ -11,6 +11,9 @@ Dotfiles managed by [Homesick](https://github.com/technicalpickles/homesick)
 
 ##### Todo
 - [x] Add `.bash_profile`
+- [x] Add `.tmux.conf`
+- [ ] Add `.mertrc` file in favour of tmux
+- [ ] Add `.itermrc` file for syncing iterm settings
 - [ ] Add `.osx` macOS defaults
 - [ ] Move exports to separate file
 - [ ] Add global `.gitignore`
