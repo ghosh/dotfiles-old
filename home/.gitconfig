@@ -26,6 +26,7 @@
     smudge = git-media-smudge %f
 [core]
 	autocrlf = false
+	safecrlf = false
 	excludesfile = /Users/ghosh/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean %f
