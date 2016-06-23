@@ -324,7 +324,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 295 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 327 570 427 0 0 1280 777 </string>
+	<string>1 293 570 452 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1070,7 +1070,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/ghosh/.iterm</string>
+	<string>/Users/ghosh/.homesick/repos/dotfiles/home/.iterm</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
