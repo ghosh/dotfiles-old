@@ -16,6 +16,7 @@ Dotfiles managed by [Homesick](https://github.com/technicalpickles/homesick)
 - [ ] Add `.mertrc` file in favour of tmux
 - [x] Add `.itermrc` file for syncing iterm settings
 - [ ] Add `.osx` macOS defaults
+- [ ] Move aliases to separate file
 - [ ] Move exports to separate file
 - [ ] Add global `.gitignore`
 - [ ] Add `.atom` for syncing atom editor settings
