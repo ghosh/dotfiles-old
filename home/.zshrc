@@ -52,6 +52,10 @@ alias hiddenFilesHide='defaults write com.apple.finder AppleShowAllFiles NO; kil
 # Sketch Commands --------------------------------
 alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 
+alias fetch="youtube-dl --extract-audio --audio-format mp3"
+
+alias t="tree -L"
+
 
 # Dev Environtment --------------------------------
 
