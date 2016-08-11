@@ -120,6 +120,8 @@ map <Leader>n :set number<cr>
 " Toggle NerdTree plugin
 nmap <C-b> :NERDTreeToggle<cr>
 
+nmap <Bslash> :noh<cr>
+
 " Toggle Unite recursive file search - requires vimproc plugin
 nmap <C-p> :Unite -start-insert file_rec/async -default-action=tabopen<cr>
 
