@@ -54,7 +54,8 @@ alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 
 alias fetch="youtube-dl --extract-audio --audio-format mp3"
 
-alias t="tree -L"
+alias t="tree -CLt 1"
+alias t2="tree -CLt 2"
 
 
 # Dev Environtment --------------------------------
