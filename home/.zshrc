@@ -49,13 +49,19 @@ alias killDS="find . -name '*.DS_Store' -type f -delete"    # Removes all .DS_St
 alias hiddenFilesShow='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hiddenFilesHide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+
 # Sketch Commands --------------------------------
 alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 
+
+# Tooling Commands --------------------------------------------
 alias fetch="youtube-dl --extract-audio --audio-format mp3"
 
 alias t="tree -CLt 1"
 alias t2="tree -CLt 2"
+
+alias hi="hicat"
+
 
 
 # Dev Environtment --------------------------------
@@ -75,6 +81,8 @@ alias sql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot"
 
 # Tmux -----------------------------------------
 alias tkill="tmux kill-session -t"
+
+
 
 # SVN ---------------------------------------------
 
