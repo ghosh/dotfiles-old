@@ -23,7 +23,8 @@ filetype on
 
 set background=dark
 "let base16colorspace=256
-colorscheme OceanicNext
+"colorscheme OceanicNext
+colorscheme solarized
 
 set linespace=0
 set showcmd
@@ -98,7 +99,7 @@ execute pathogen#infect()
 
 " Airline Settings
 let g:airline_powerline_fonts=1
-let g:airline_theme='oceanicnext'
+let g:airline_theme='solarized'
 
 
 " ---------------------------------------------
@@ -120,6 +121,7 @@ map <Leader>n :set number<cr>
 " Toggle NerdTree plugin
 nmap <C-b> :NERDTreeToggle<cr>
 
+" Remove search higlight. Backslash
 nmap <Bslash> :noh<cr>
 
 " Toggle Unite recursive file search - requires vimproc plugin
