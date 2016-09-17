@@ -58,6 +58,8 @@ alias gitconfig="git config -e --global"  # git Config
 
 alias zshreload=". ~/.zshrc"             # zsh Reload
 
+alias bootfiles="cd ~/.homesick/repos/dotfiles"
+
 
 # Mac System Commans --------------------------------
 alias killDS="find . -name '*.DS_Store' -type f -delete"    # Removes all .DS_Store files from dir and subdirs

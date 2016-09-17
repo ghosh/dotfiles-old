@@ -13,10 +13,22 @@
     cnf = !git ls-files -u | cut -f 2 | sort -u
 [color]
     ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    commit = green
+    meta = yellow
+    frag = cyan
+    old = red
+    new = green
+    whitespace = red reverse
 [mergetool]
     keepBackup = true
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [push]
     default = simple
 [grep]
@@ -25,18 +37,19 @@
     clean = git-media-clean %f
     smudge = git-media-smudge %f
 [core]
-	autocrlf = false
-	safecrlf = false
-	excludesfile = /Users/ghosh/.gitignore_global
+    autocrlf = false
+    safecrlf = false
+    excludesfile = /Users/ghosh/.gitignore_global
+    pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [url "https://"]
-	insteadOf = git://
+    insteadOf = git://
