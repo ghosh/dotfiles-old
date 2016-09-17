@@ -30,6 +30,22 @@ MAIL=0
 
 
 # ---------------------------------
+# Dotfiles installation
+# ---------------------------------
+install_dotfiles() {
+  file=".homesick/repos/dotfiles/install.sh"
+  if [ -f "$file" ]
+  then
+      echo "Installing dotfiles..."
+      ./$files
+  else
+      echo "Install script not found. Install Homesick first - https://github.com/technicalpickles/homesick"
+  fi
+}
+
+
+
+# ---------------------------------
 # ALIASES
 # ---------------------------------
 
@@ -61,6 +77,8 @@ alias t="tree -CLt 1"
 alias t2="tree -CLt 2"
 
 alias hi="hicat"
+
+alias top="vtop"
 
 
 
@@ -127,8 +145,8 @@ export PATH="$MAMP_PHP:$PATH"
 #eval "$(grunt --completion=zsh)"
 
 
-#export NVM_DIR="/Users/Ghosh/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="/Users/Ghosh/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
