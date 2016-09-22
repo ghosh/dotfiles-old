@@ -100,6 +100,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhartington/oceanic-next'
@@ -109,10 +110,23 @@ call plug#end()
 
 
 " ---------------------------------------------
-" Airline Settings
+" Plugin Settings
 " ---------------------------------------------
+
+" Airline ---
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
+
+
+" CtrlP ---
+
+" Set no max file limit
+let g:ctrlp_max_files = 0
+
+" Ignore these directories
+set wildignore+=*/node_modules/**
+set wildignore+=*/vendor/**
+set wildignore+=*/bower_compoents/**
 
 
 " ---------------------------------------------
