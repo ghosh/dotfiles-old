@@ -21,7 +21,7 @@ Dotfiles managed by [Homesick](https://github.com/technicalpickles/homesick)
 - [ ] Move exports to separate file
 - [ ] Add global `.gitignore`
 - [ ] Add `.atom` for syncing atom editor settings
-- [ ] Adopt [vim-plug](https://github.com/junegunn/vim-plug) for plugin mangement
+- [x] Adopt [vim-plug](https://github.com/junegunn/vim-plug) for plugin mangement
 
 ```
 Before software can be reusable it first has to be usable.

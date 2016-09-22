@@ -91,13 +91,26 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 " ---------------------------------------------
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = []
+" let g:pathogen_disabled = []
 
 " Pathogen Plugin Management
-execute pathogen#infect()
+"execute pathogen#infect()
 
 
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'mhartington/oceanic-next'
+
+" Add plugins to &runtimepath
+call plug#end()
+
+
+" ---------------------------------------------
 " Airline Settings
+" ---------------------------------------------
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 
