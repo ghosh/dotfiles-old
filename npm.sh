@@ -8,4 +8,5 @@ npm install -g bower
 npm install -g nodemon
 npm install -g grunt-cli
 npm install -g gulp-cli
+npm install -g mamp-cli
 npm install -g npm-check-updates
