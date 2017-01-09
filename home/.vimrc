@@ -22,9 +22,10 @@ syntax on
 filetype on
 
 set background=dark
-"let base16colorspace=256
-"colorscheme OceanicNext
-colorscheme solarized
+let base16colorspace=256
+colorscheme OceanicNext
+"colorscheme solarized
+"colorscheme one
 
 set linespace=0
 set showcmd
@@ -104,6 +105,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhartington/oceanic-next'
+Plug 'rakr/vim-one'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'mattn/emmet-vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -115,7 +119,8 @@ call plug#end()
 
 " Airline ---
 let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
+let g:airline_theme='one'
+
 
 
 " CtrlP ---
@@ -132,6 +137,9 @@ set wildignore+=*/bower_compoents/**
 " ---------------------------------------------
 " Custom Mappings
 " ---------------------------------------------
+
+" Use Tab to expand in vim emmet
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " With a map leader it's possible to do extra key combinations
 let mapleader = ","
