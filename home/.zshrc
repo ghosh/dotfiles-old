@@ -45,6 +45,16 @@ install_dotfiles() {
 
 
 
+
+function silo() {
+  ( cd ~/Homestead && vagrant $* )
+}
+
+
+
+
+
+
 # ---------------------------------
 # ALIASES
 # ---------------------------------
@@ -116,9 +126,6 @@ alias svnadd="svn st | grep \? | awk '''{print \"svn add \"$2 }''' | bash"
 alias svnst='svn st --ignore-externals'
 
 # Others -----------------------------------------
-
-# Runs a custom PHP server
-alias serve="php -S localhost:8888"
 
 # Other Aliases
 alias c="clear"
