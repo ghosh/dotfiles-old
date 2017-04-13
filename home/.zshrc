@@ -78,6 +78,9 @@ alias hiddenFilesShow='defaults write com.apple.finder AppleShowAllFiles YES; ki
 alias hiddenFilesHide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 
+alias desktopIconsHide='defaults write com.apple.finder CreateDesktop false; killall Finder'
+alias desktopIconsShow='defaults write com.apple.finder CreateDesktop true; killall Finder'
+
 # Sketch Commands --------------------------------
 alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 
