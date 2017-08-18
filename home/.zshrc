@@ -32,7 +32,7 @@ MAIL=0
 # ---------------------------------
 # Dotfiles installation
 # ---------------------------------
-install_dotfiles() {
+function install_dotfiles() {
   file=".homesick/repos/dotfiles/install.sh"
   if [ -f "$file" ]
   then
@@ -48,6 +48,12 @@ install_dotfiles() {
 
 function silo() {
   ( cd ~/Homestead && vagrant $* )
+}
+
+
+# Usage = gzip_size index.js
+function gzip_size() {
+  gzip -c $1 | wc -c
 }
 
 
@@ -87,6 +93,7 @@ alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 
 # Tooling Commands --------------------------------------------
 alias fetch="youtube-dl --extract-audio --audio-format mp3"
+alias codecourse="php codecourse download"
 
 alias t="tree -CLt 1"
 alias t2="tree -CLt 2"
@@ -95,6 +102,7 @@ alias hi="hicat"
 
 alias top="vtop"
 
+alias phpserve="php -S localhost:8000"
 
 
 # Dev Environtment --------------------------------
@@ -108,6 +116,8 @@ alias ace="./ace"
 # Artisan Aliases
 alias artisan="php artisan"
 alias art="php artisan"
+
+alias dusk="php artisan dusk"
 
 alias phpunit="./vendor/bin/phpunit"
 alias unit="./vendor/bin/phpunit"
@@ -143,8 +153,8 @@ alias remove="rm -rf"
 export PATH=$PATH:/bin:/usr/bin:/usr/local/bin
 
 # Defining and adding MAMP php to path (Comment and uncomment to toggle)
-export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin
-export PATH="$MAMP_PHP:$PATH"
+# export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.10/bin
+# export PATH="$MAMP_PHP:$PATH"
 
 #As mentioned by Brew Doctor
 #export PATH="/usr/local/bin:$PATH"

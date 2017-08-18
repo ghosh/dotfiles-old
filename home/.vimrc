@@ -22,10 +22,14 @@ syntax on
 filetype on
 
 set background=dark
-let base16colorspace=256
+"let base16colorspace=256
 colorscheme OceanicNext
 "colorscheme solarized
 "colorscheme one
+
+
+let g:solarized_termcolors=256
+
 
 set linespace=0
 set showcmd
@@ -33,7 +37,6 @@ set number                     " Line numbers
 set cursorline                 " Highlights cursor line
 set laststatus=2               " Show statusline even when no window split
 set scrolloff=2                " Keep 2 scroll lines above/below cursor
-
 
 " ---------------------------------------------
 " Tab Settings
@@ -108,6 +111,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'rakr/vim-one'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mattn/emmet-vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -120,8 +124,6 @@ call plug#end()
 " Airline ---
 let g:airline_powerline_fonts=1
 let g:airline_theme='one'
-
-
 
 " CtrlP ---
 
@@ -137,7 +139,6 @@ set wildignore+=*/bower_compoents/**
 " ---------------------------------------------
 " Custom Mappings
 " ---------------------------------------------
-
 " Use Tab to expand in vim emmet
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
