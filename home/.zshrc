@@ -104,6 +104,8 @@ alias top="vtop"
 
 alias phpserve="php -S localhost:8000"
 
+alias sizes="du -hsc *"
+
 
 # Dev Environtment --------------------------------
 
@@ -235,3 +237,5 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+export PATH="$HOME/.yarn/bin:$PATH"
