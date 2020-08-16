@@ -13,7 +13,7 @@ ZSH_THEME="ambidexter"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git svn composer sublime laravel5 vagrant z npm bower brew zsh-navigation-tools)
+plugins=(git z zsh-navigation-tools zsh-yarn-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,11 +44,6 @@ function install_dotfiles() {
 }
 
 
-
-
-function silo() {
-  ( cd ~/Homestead && vagrant $* )
-}
 
 
 # Usage = gzip_size index.js
@@ -95,25 +90,30 @@ alias sketchmem="sudo du -sh /.DocumentRevisions-V100"
 alias fetch="youtube-dl --extract-audio --audio-format mp3"
 alias codecourse="php codecourse download"
 
+alias u="unpack"
+
 alias t="tree -CLt 1"
 alias t2="tree -CLt 2"
 
 alias hi="hicat"
 
-alias top="vtop"
+# alias top="vtop"
 
 alias phpserve="php -S localhost:8000"
 
 alias sizes="du -hsc *"
 
 
+alias npmg="npm list -g --depth=0"
+
 # Dev Environtment --------------------------------
 
 # Vagrant Shortcut
 alias v="vagrant"
 
-# Ace Alias
-alias ace="./ace"
+# Adonis Aliases
+alias ado="adonis"
+alias ploy="adonis migration:refresh --seed"
 
 # Artisan Aliases
 alias artisan="php artisan"
@@ -170,6 +170,14 @@ export PATH=$PATH:/bin:/usr/bin:/usr/local/bin
 # Grunt Tab Completion
 # ---------------------------------
 #eval "$(grunt --completion=zsh)"
+
+
+# ---------------------------------
+# Docker Tab Completion
+# ---------------------------------
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+
 
 
 export NVM_DIR="/Users/Ghosh/.nvm"
@@ -239,3 +247,7 @@ fi
 ###-end-npm-completion-###
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
